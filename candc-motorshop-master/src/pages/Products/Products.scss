@@ -1,0 +1,182 @@
+.products{
+    margin: 5vh 15vw;
+    align-items: start;
+    display: flex;
+    height: 100dvh;
+ 
+  
+    .leftWrapper  {
+        flex: 1;
+     
+        position: sticky;
+      
+        top: 100px;
+        .catButtons{
+            padding: 20px;
+            width: 250px;
+             border: 2px solid #eef1f0;
+             border-bottom: 0px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        .left{
+      
+       
+            border: 2px solid #eef1f0;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            background: white;
+
+            height: 80dvh;
+
+
+       
+
+
+            .inputItemPrice{
+      
+                  margin: 0px 20px 0px 20px;
+                margin-bottom: 10px;
+              
+         
+
+                label{
+                    font-family: Source Sans Pro;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    color: #807f84;
+                }
+
+                .priceLabels{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    font-family: Source Sans Pro;
+      
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    color: #807f84;
+                }
+            }
+
+
+                .filterItemPrice{
+
+                    display: flex;
+                    flex-direction: column;
+            
+
+                    h2{
+                        font-family: Source Sans Pro;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                }
+            .filterItem{
+
+            
+                margin-bottom: 30px;
+                h2{
+                    font-family: Source Sans Pro;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+
+                h3{
+                    font-family: Source Sans Pro;
+                    font-size: 17px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: #313239;
+                }
+
+                .inputItem{
+                    margin-bottom: 10px;
+              
+                    .prettoWrapper{
+                     margin: 0px 20px 0px 20px;
+                    }
+
+                    label{
+                        font-family: Source Sans Pro;
+                        margin-left: 10px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        color: #807f84;
+                    }
+
+                    .priceLabels{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        font-family: Source Sans Pro;
+      
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        color: #807f84;
+                    }
+                }
+            }
+        }
+
+    }
+
+   
+
+    .right{
+        flex: 4;
+        
+
+        .banner{
+            position: relative;
+            
+           height: 230px;
+      
+           margin-left: 20px;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        
+           img{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);   
+           }
+           h1{
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            font-weight: 500;
+            letter-spacing: 10px;
+            font-family: Poppins;
+           }
+        
+        }
+        .catImg{
+            width: 100%;
+            
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}

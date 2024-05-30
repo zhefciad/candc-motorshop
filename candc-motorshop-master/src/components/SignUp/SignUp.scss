@@ -1,0 +1,55 @@
+.signUpWrapper{
+    min-height: 75vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerWrapperUp{
+        width: 90rem;
+      
+    }
+}
+
+.custom-button {
+    background-color: #f3712b;
+    color: white;
+  
+    &:hover,
+    &.ant-btn:hover {
+      background-color: #e06726;
+    }
+  }
+
+  .names{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .containerWrapperUp{
+      scale: 1.2;
+      
+  }
+  }
+
+.ant-card-head-title{
+  text-align: center !important;
+}
+
+.formWrapper{
+
+ 
+
+  .formLeft{
+    margin-right: 10px !important;
+  }
+}
+
+
+.ant-form-item-explain-error{
+  font-size: 12px;
+  margin-left: 2px;
+}

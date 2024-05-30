@@ -1,0 +1,209 @@
+.categories {
+    display: flex;
+    margin: 5vh 15vw;
+    flex-direction: column;
+    margin-bottom: 10vh;
+   
+
+   
+    
+    .topCatWrapper{
+
+      display: flex;
+      align-items: center;
+      h2{
+        font-size: 30px;
+        font-weight: 600;
+        color: #30383d;
+        margin: 0;
+        font-family: Poppins;
+        flex: 3;
+      }
+
+      p{
+        flex: 3;
+        margin: 0;
+        font-family: Poppins;
+        font-weight: 300;
+        font-size: 15px;
+        color: #161a1d;
+      }
+
+      .buttonDiscWrapper{
+        flex: 5;
+        display: flex;
+        justify-content: end;
+   
+      }
+      
+
+    }
+  .container-wrapper{
+
+      margin-top: 3vh;
+      display: grid; 
+      grid-template-columns: repeat(5, 1fr); 
+      grid-template-rows:200px 100px 200px; 
+      gap: 15px; 
+      grid-template-areas: 
+        "grid5 grid1 grid1 grid3 grid3"
+        "grid5 grid2 grid2 grid3 grid3"
+        "grid5 grid2 grid2 grid4 grid4"; 
+
+        .catDesc{
+          position: absolute;
+          bottom: 0px;
+          height: 100%;
+          width: 100%;
+          color: white;
+          display: flex;
+          box-sizing: border-box;
+          padding: 2rem;
+          align-items: end;
+          justify-content: space-between;
+
+          .leftCatDesc{
+            h3, p{
+              margin: 0;
+              font-family: Poppins;
+            }
+
+            h3{
+              font-weight: 500;
+              font-size: 22px;
+            }
+            p{
+              font-weight: 300;
+              font-size: 14px;
+            }
+          }
+         }
+        
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px; 
+        }
+        .grid-item-hover {
+          transition: transform 0.3s ease, filter 0.5s ease;
+        }
+
+        .grid-item-hover:hover {
+          transform: scale(1.01);
+          // filter: brightness(0.8);
+        }
+
+        
+        .grid-1 { 
+          border-radius: 20px; 
+          grid-area: grid1; 
+          position: relative;
+          .overlay{
+
+            background: linear-gradient(to top, #000000, transparent);
+            position: absolute;
+            bottom: 0;
+            height: 60%;
+            width: 100%;
+            opacity: 0.8;
+            border-radius: 20px; 
+          }
+        }
+        .grid-2 {  
+          border-radius: 20px; 
+         grid-area: grid2; 
+         position: relative;
+         .overlay{
+           border-radius: 20px; 
+           background: linear-gradient(to top, #000000, transparent);
+           position: absolute;
+           bottom: 0;
+           height: 60%;
+           width: 100%;
+           opacity: 0.8;
+         }
+
+         
+         .catDesc{
+          position: absolute;
+          bottom: 0px;
+          height: 100%;
+          width: 100%;
+          color: white;
+          display: flex;
+          box-sizing: border-box;
+          padding: 2rem;
+          align-items: end;
+          justify-content: space-between;
+
+          .leftCatDesc{
+            h3, p{
+              margin: 0;
+              font-family: Poppins;
+            }
+
+            h3{
+              font-weight: 500;
+              font-size: 22px;
+            }
+            p{
+              font-weight: 300;
+              font-size: 14px;
+            }
+          }
+         }
+        }
+        .grid-3 {  
+          border-radius: 20px; 
+           grid-area: grid5; 
+           position: relative;
+           .overlay{
+            border-radius: 20px; 
+             background: linear-gradient(to top, #000000, transparent);
+             position: absolute;
+             bottom: 0;
+             height: 60%;
+             width: 100%;
+             opacity: 0.8;
+           }
+        }
+        .grid-4 {  
+          border-radius: 20px; 
+           grid-area: grid4; 
+           position: relative;
+           .overlay{
+            border-radius: 20px; 
+             background: linear-gradient(to top, #000000, transparent);
+             position: absolute;
+             bottom: 0;
+             height: 60%;
+             width: 100%;
+             opacity: 0.8;
+           }
+          }
+        .grid-5 {  
+          border-radius: 20px; 
+          grid-area: grid3; 
+          position: relative;
+          .overlay{
+            border-radius: 20px; 
+            background: linear-gradient(to top, #000000, transparent);
+            position: absolute;
+            bottom: 0;
+            height: 60%;
+            width: 100%;
+            opacity: 0.8;
+          }
+        }
+      }
+
+
+    // .cardWrapper{
+    //   display: flex;
+    //   justify-content: space-between;
+    //   flex-wrap: wrap;
+   
+     
+    // }
+  }

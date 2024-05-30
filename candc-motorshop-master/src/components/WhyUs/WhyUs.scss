@@ -1,0 +1,109 @@
+.WhyUs{
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    margin: 10vh 15vw  15vh 15vw;
+    
+    .topWrapper{
+        display: flex;
+        color: #161a1d;
+        align-items: center;
+
+        h2{
+            flex: 1;
+            font-size: 40px;
+             margin: 0;
+        }
+        p{
+            flex: 1;
+            margin: 0;
+            font-size: 15px;
+    
+        }
+   
+
+        .imageFill{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            hr{
+            
+    
+                height: 125px;
+                color: rgba(240, 243, 249, 0.262745098);
+                font-family: Poppins;
+                font-weight: 500;
+      
+           
+            }
+            flex: 3;
+            display: flex;
+            justify-content: end;
+            
+
+            img{
+                width: 30rem;
+             
+            }
+        }
+    }
+
+
+
+    .bottomWrapper{
+        margin-top: 5rem;
+        display: flex;
+      
+
+
+        .logoWrapper{
+            background-color: #22272a;
+            padding: 15px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            margin-right: 15px;
+        }
+        .leftWhy{
+            display: flex;
+            margin-right: 30px;
+            .leftWhyDesc{
+             
+                h3, p{
+                    margin: 0;
+                    
+                }
+
+                p{
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+        .middleWhy{
+            display: flex;
+            margin-right: 30px;
+                h3, p{
+                    margin: 0;
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+        }
+        .rightWhy{
+            display: flex;
+            margin-right: 30px;
+                h3, p{
+                    margin: 0;
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 13px;
+                }
+        }
+    }
+}

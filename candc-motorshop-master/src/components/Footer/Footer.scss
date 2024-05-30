@@ -1,0 +1,115 @@
+
+.Footer{
+
+    .topFooter{
+        padding: 5vh 15vw 0vh 15vw;
+        display: flex;
+        gap: 5rem;
+        font-family: Poppins;
+        text-decoration: none;
+
+        .firstLink{
+   
+            margin-top: 10px;
+        }
+        
+        .linkFooter{
+            margin-bottom: 25px;
+            font-weight: 500;
+            font-size: 15px;
+            color: #464a4e;
+        }
+
+        .introFooter{
+            display: flex;
+            flex-direction: column;
+            flex: 6;
+            font-weight: 500;
+            font-size: 15px;
+            color: #464a4e; 
+        }
+    
+        .companyFooter{
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+            
+
+            
+        }
+    
+        .productsFooter{
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+        }
+    
+        .socialsFooter{
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+        }
+    
+        .upButtonWrapper{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            
+            .iconButtonUp {
+                width: 60px !important;
+                height: 60px !important;
+                background: #f3712b;
+                box-shadow: rgb(38, 57, 77) -8px 20px 30px -15px;
+            }
+        }
+    }
+
+    .bottomFooter{
+        padding: 2vh 15vw 5vh 15vw;
+
+        hr{
+            color: rgba(240, 243, 249, 0.262745098);
+            font-family: Poppins;
+            font-weight: 500;
+        }
+
+        .subBottomFooter{
+            display: flex;
+            margin: 5vh 0vw 0vh;
+
+            .leftFooter{
+                font-family: Poppins;
+                font-weight: 500;
+                color: #4b4f57;
+                font-size: 14px;
+                flex: 2;
+                display: flex;
+                align-items: center;
+            }
+
+            .rightFooter{
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 14px;
+                flex: 1;
+  
+                .rightFooterWrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .linkBottomFooter{
+                        color: #4b4f57;
+                    }
+
+                    hr{
+                        color: rgba(240, 243, 249, 0.262745098);
+                        font-family: Poppins;
+                        font-weight: 500;
+                        height: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}

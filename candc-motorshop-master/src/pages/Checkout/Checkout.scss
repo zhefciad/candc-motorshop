@@ -1,0 +1,213 @@
+
+.header{
+   h2{
+      margin-top: 0px;
+      font-family: Poppins;
+      color: #30402c;
+      font-weight: 600;
+      font-size: 20px;
+   }
+}
+
+   h4{
+      margin-top: 0px;
+      font-family: Poppins;
+      color: #30402c;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 5px;
+      margin-left: 2px;
+   }
+
+
+.checkout {
+   min-height: 80vh;
+   margin: 6vh 15vw;
+   display: flex;
+   gap: 30px;
+
+   
+  .leftCheckout{
+   display: flex;
+   flex-direction: column;
+   flex: 2;
+   // outline: 1px solid rgb(246, 167, 103);
+
+   .cardWrapperLeft{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      // outline: 1px solid red;
+      // background: rgba(246, 167, 103, 0.239);
+
+      .headerTop{
+         height: 4rem;
+         // outline: 1px solid red;
+         h2{
+            font-family: Poppins;
+            color: #30402c;
+            font-weight: 600;
+            font-size: 20px;
+       
+         }
+      }
+
+      .leftCheckoutWrapper{
+         height: 100%;
+         // outline: 1px solid red;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      .leftCheckoutTop{
+      
+
+         .cardWrapperTopTwice{
+            padding: 30px;
+            background: white;
+            outline: 2px solid #f4f4f2;
+            height: 481.917px;
+           
+            .cardWrapperTop{
+               display: flex;
+               gap: 10px;
+             
+               .fieldHeight{
+                  min-height: 125px;
+               }
+               .nameField{
+              
+               }
+              
+            
+               .leftInfo{
+                  flex: 1;
+               }
+   
+               .rightInfo{
+                  flex: 1;
+   
+   
+                  .zipStateWrapper{
+                     display: flex;
+                     gap: 10px ;
+                  }
+               }
+            
+            
+            }
+         }
+     
+      
+      }
+
+      .leftCheckoutMiddle{
+
+         .header{
+            h2{
+               margin-top: 40px;
+            }
+         }
+         .cardWrapperMiddle{
+            padding: 30px;
+            background: white;
+            outline: 2px solid #f4f4f2;
+         }
+      }
+
+      .leftCheckoutEnd{
+         .header{
+            h2{
+               margin-top: 40px;
+            }
+         }
+         .cardWrapperEnd{
+            background: white;
+            padding: 30px;
+            outline: 2px solid #f4f4f2;
+
+            .controlLabels{
+               display: flex;
+               justify-content: space-between;
+            }
+         }
+      }
+
+   }
+
+
+
+  }
+
+  .rightCheckout{
+   flex: 1;
+
+   
+      .cardWrapperRight{
+       
+         height: 100%;
+       
+         // background: rgba(246, 167, 103, 0.239);
+         // outline: 1px solid red;
+         display: flex;
+         flex-direction: column;
+
+         .headerTop{
+            height: 4rem;
+            // outline: 1px solid red;
+            h2{
+               font-family: Poppins;
+               color: #30402c;
+               font-weight: 600;
+               font-size: 20px;
+          
+            }
+         }
+
+         .rightCartWrapper{
+            background: white;
+            height: 100% !important;
+            outline: 2px solid #f4f4f2;
+            
+         }
+       }  
+  }
+
+
+  }
+
+
+  .MuiFormHelperText-root{
+
+   margin-top: 4px !important;
+   margin-left: 6px !important;
+  }
+
+
+  .custom-form-label {
+   font-family: Poppins;
+   color: #30402c;
+   font-weight: 600;
+   font-size: 14px;
+   margin-left: 2px;
+ }
+ 
+
+ .labelCash{
+   display: flex;
+   align-items: center;
+
+      img{
+         width: 7rem;
+         margin-left: 1rem;
+      }
+ }
+ .labelOnline{
+   display: flex;
+   align-items: center;
+
+      img{
+         width: 5rem;
+         margin-left: 1rem;
+      }
+ }

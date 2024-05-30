@@ -1,0 +1,36 @@
+.teamCard{
+
+    width: 17rem;
+    font-family: "Helvetica";
+   
+    .teamImg{
+
+        img{
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+
+    .nameSocialsWrapper{
+        margin-top: 10px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        h2{
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #232128;
+        }
+    }
+
+    h3{
+        display: flex;
+        margin-top: 0;
+        color: #747784;
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+}

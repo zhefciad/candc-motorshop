@@ -1,0 +1,27 @@
+.featuredProducts{
+    margin: 100px 10vw;
+   
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        h1{
+            flex: 2;
+            text-transform: capitalize;
+            font-family: Poppins;
+        }
+
+        p{
+            flex: 3;
+            color: gray;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}

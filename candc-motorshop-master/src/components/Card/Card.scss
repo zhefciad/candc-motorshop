@@ -1,0 +1,171 @@
+.card{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    // outline: 1px solid #d6d5d5;
+    padding: 20px;
+    padding-top: 0px;
+    transition: all 0.2s ease;
+
+    &:hover{
+        scale: 1.02;
+    }
+    .image{
+        border-radius: 10px;
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:hover{
+            .secondImg{
+                z-index: 2;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .mainImg{
+            z-index: 1;
+            
+        }
+
+        span{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #cc0d00;
+            border-radius: 2px;
+            color: rgb(255, 255, 255);
+            padding: 5px 7px;
+            z-index: 3;
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+
+   
+    }
+
+    h2{
+        margin: 0;
+        
+    }
+
+    h3{
+        margin: 0;
+    }
+
+
+    h2{
+        font-size: 16px;
+        font-weight: 400;
+        color: #565e66;
+        margin-bottom: 8px;
+    }
+
+
+    .bottomWrapper{
+     
+        margin-top: 10px;
+        display: flex;
+        height: 35%;
+        justify-content: space-between;
+
+        .detailsWrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+    
+            .leftPrices{
+                display: flex;
+                gap: 5px;
+                font-family: Poppins;
+           
+                
+            }
+        
+      
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+                color: #404b59;
+                
+                
+                &:nth-child(1){
+                 
+                  margin: 0;
+                 
+                 
+                }
+                &:nth-child(2){
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: gray;
+                    text-decoration: line-through;
+                }
+            }
+
+    }
+
+
+
+
+    }
+}
+
+.Toastify__toast--success {
+
+  border-radius: 10px !important;
+  background: #000000a1 !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-family: Poppins !important;
+//   margin: 0 !important;
+//   padding: 0 !important;
+  
+}
+.Toastify__toast{
+    min-height: 20px !important;
+}
+.Toastify__toast-body{
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 160px !important;
+    margin-right: 5px !important;
+    
+}
+.Toastify__toast--success::before {
+  content: url("../assets/images/svg/successToast.svg");// Your svg Path
+  position:relative; 
+  z-index:100000;
+  left:12px;
+  top:6px;
+  color: #ffffff !important;
+}
+.Toastify__toast--success::after {
+  content : url('../assets/images/svg/closeToast.svg');// Your svg Path
+  position: absolute;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 700;
+  left:265px;
+  padding-top: 14px !important;
+}
+
+.Toastify__toast-icon {
+    // display: none !important; /* Set the desired color for the toast icon */
+    margin-left: 5px;
+    fill: #ff772d !important;
+  }
+  

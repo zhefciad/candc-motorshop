@@ -1,0 +1,95 @@
+.Hero{
+    display: flex;
+    align-items: center;
+    margin: 0vh 15vw;
+    min-height: 67vh;
+   
+    .leftWrapper * {
+        font-family: Poppins;
+    }
+    .leftWrapper{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .searchGroup{
+            display: flex;
+            margin-top: 2rem;
+            justify-content: start;
+            align-items: center;
+            img{
+                width: clamp(1.1rem, 1.8vw, 1.8rem);
+                margin-right: 10px;
+                cursor: pointer;
+                transform: translateY(-10%);
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 15px;
+            }
+            .search{
+                height: clamp(1.8rem, 5vw, 3rem);
+                margin-right: 10px;
+                border: 0;
+                box-shadow: rgba(1, 1, 1, 0.1) 0px 0.5px 14px 0px;
+                color: rgb(30, 28, 28);
+                width: clamp(8rem, 30vw, 13rem);
+                border-radius: 0.5rem;
+                font-family: "Poppins";
+                cursor: initial;
+                background: rgb(255, 255, 255);
+                padding-left: 1rem;
+                align-self: center;
+                justify-self: center;
+                position: relative;
+           
+                font-size: clamp(0.5rem, 1.5vw, 0.9rem);
+            }
+
+        }
+
+        
+        span{
+            color: #ff772d;
+        }
+        p{
+            margin: 0;
+            font-weight: 600;
+            font-size: 16px;
+            
+        }
+
+        h1{
+            color: #30383d;
+            margin: 0;
+            font-size: clamp(28px, 4vw, 3.5rem); 
+            margin-bottom: 0.5rem;
+            margin-left: -3px;
+            white-space: nowrap;
+        }
+
+        h2{
+            color: #505b6c;
+            font-weight: 400;
+            font-size: clamp(9px, 0.8vw, 1.2rem); 
+            font-family: Poppins;
+            width: 80%;
+            margin: 0;
+        
+         
+        }
+    }
+
+
+    .rightWrapper{
+        flex: 1;
+        .heroImgWrapper{
+            margin-top: 50px;
+            display: flex;
+            justify-content: end;
+            img{
+                width: clamp(20rem, 90%, 45rem); 
+            }
+        }
+    }
+
+
+
+
+}

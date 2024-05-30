@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "string",
+      "unique": true
+    },
+    "order_date_time": {
+      "type": "datetime"
+    },
+    "customer_info": {
+      "type": "json"
+    },
+    "order_total": {
+      "type": "integer"
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "gcash",
+        "card",
+        "n/a"
+      ]
+    },
+    "payment_status": {
+      "type": "enumeration",
+      "enum": [
+        "Processing",
+        "Paid",
+        "Failed",
+        "n/a"
+      ]
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "order"
+    },
+    "payment_intent_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.CategoryCard{
+    width: 15rem !important;
+    height: 15rem !important;
+    flex-shrink: 0;
+    margin-right: 28px;
+  
+    margin-top: 40px;
+    .catCardWrapper{
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: relative;
+        border-radius: 10px;
+        flex-shrink: 0;
+      
+        img{
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            filter: brightness(0.8);
+        }
+
+        .catButton{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+}

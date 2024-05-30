@@ -1,0 +1,80 @@
+.aboutUs{
+    margin: 0vh 15vw;
+    height: 140vh;
+
+
+    .topAboutUs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .aboutHeader{
+  
+            width: 50rem;
+            margin-top: 5rem;
+           h1{
+            text-align: center;
+               font-size: 50px;
+               color: #1c1d23;
+
+               span{
+color: #ff772d;
+               }
+           }
+       }
+
+       .aboutCaption{
+           display: flex;
+
+           h4{
+               font-family: Arial;
+               font-weight: 100;
+               margin-top: -8px;
+               margin-right: 12px;
+           }
+
+           p{
+               font-family: Poppins;
+               font-size: 16px;
+               font-weight: 500;
+                width: 33.5em;
+                margin-top: 0;
+                text-align: center;
+                color: #6b707a;
+           }
+       }
+
+    }
+
+    .teamSection{
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+
+        h2{
+            font-size: 40px;
+            color: #1c1d23;
+            width: 50rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family: Poppins;
+        }
+        p{
+          
+            font-size: 17px;
+            font-family: Poppins;
+            color: #808692;
+            font-weight: 500;
+            width: 40rem;
+        }
+    }
+
+    .teamCards{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+}

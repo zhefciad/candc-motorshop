@@ -1,0 +1,135 @@
+.leftCardProfile{
+
+  .profileHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #333333;
+    .leftWrapperHeader{
+      img{
+        width: 40px;
+      }
+
+      margin-right: 10px;
+
+    }
+
+    .rightWrapperHeader{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      
+      h4{
+        margin: 0;
+       
+      }
+      .subEdit{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+       
+        p{
+          margin: 0px;
+          font-size: 12px;
+          font-weight: 400;
+          color: #808080;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .profileMenu{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Roboto" ;
+    color: rgb(123, 123, 123);
+    .myProfile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15px;
+      cursor: pointer;
+      &:hover{
+        color: #f5712b
+      }
+      h4{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+       
+      }
+    }
+    .myPurchase{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover{
+        color: #f5712b
+      }
+      h4{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.nav-color{
+  color: #f5712b;
+}
+
+
+
+
+.ant-card-bordered{
+  border: 2px solid #f0f0f0;
+}
+
+.profileWrapper{
+    min-height: 75vh;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 25vw;
+    .containerWrapperProfile{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+      
+    }
+}
+
+.custom-button {
+    background-color: #f3712b;
+    color: white;
+  
+    &:hover,
+    &.ant-btn:hover {
+      background-color: #e06726;
+    }
+  }
+.profile_page_card{
+  box-shadow: 0px !important;
+  border-radius: 13px !important;
+
+}
+
+.rightCardProfile .ant-card-body{
+  height: 100% !important;
+}
+
+  @media screen and (min-width: 1024px) {
+  //   .containerWrapperProfile{
+  //     scale: 1.1;
+    
+  // }
+  }

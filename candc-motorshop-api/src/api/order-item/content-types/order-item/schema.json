@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "singularName": "order-item",
+    "pluralName": "order-items",
+    "displayName": "OrderItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::order.order",
+      "inversedBy": "order_items"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "shipping_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Preparing to Ship",
+        "Shipped",
+        "In Transit",
+        "Out For Delivery"
+      ]
+    },
+    "customer_info": {
+      "type": "json"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_email": {
+      "type": "email"
+    },
+    "imageLink": {
+      "type": "string"
+    },
+    "payment_status": {
+      "type": "enumeration",
+      "enum": [
+        "Processing",
+        "Paid",
+        "Failed",
+        "n/a"
+      ]
+    },
+    "payment_intent_id": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}
