@@ -18,6 +18,7 @@ import useScreenSize from "../../hooks/useScreenSize";
 import { API } from "../../constant";
 import { setToken } from "../../helpers";
 import "./SignIn.scss";
+
 const ScrollToTopOnRender = () => {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -25,15 +26,15 @@ const ScrollToTopOnRender = () => {
 
   return null;
 };
+
 const SignIn = () => {
   const { isDesktopView } = useScreenSize();
   const navigate = useNavigate();
-
   const { setUser } = useAuthContext();
 
   const [isLoading, setIsLoading] = useState(false);
-
   const [error, setError] = useState("");
+
   const getSize = () => {
     return window.innerWidth;
   };
@@ -51,7 +52,9 @@ const SignIn = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const colSpan = screenSize >= 1024 ? 5 : 18;
+
   const onFinish = async (values) => {
     setIsLoading(true);
     try {
@@ -136,6 +139,10 @@ const SignIn = () => {
                   >
                     <Input.Password placeholder="Password" />
                   </Form.Item>
+
+                  <Typography.Paragraph className="form_help_text">
+                    <Link to="/forgot-password">Forgot Password?</Link>
+                  </Typography.Paragraph>
 
                   <Form.Item>
                     <Button
